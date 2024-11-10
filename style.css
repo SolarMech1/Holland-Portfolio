@@ -306,10 +306,10 @@
   
   #port1 {
       background-position: left;
-      background-image: url("images/motif museum ss.jpg");
+      background-image: url("images/mountain background.jpg");
   }
   #port1:hover {
-      background-image: url("images/motif museum ss dark.jpg");
+      background-image: url("images/mountain background dark.jpg");
   }
   
   #port2 {
