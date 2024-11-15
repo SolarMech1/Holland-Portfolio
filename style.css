@@ -1,0 +1,467 @@
+/*Fonts*/
+@font-face {
+    font-family: corbel;
+    src: url("fonts/CORBEL.TTF");
+}
+
+
+@font-face {
+    font-family: corbelLight;
+    src: url("fonts/Corbel Light.TTF");
+}
+
+
+@font-face {
+    font-family: corbelBold;
+    src: url("fonts/Corbel Bold.ttf");
+}
+
+
+/*general tags*/
+* {
+    margin: 0;
+    padding: 0;
+}
+
+html {
+    color: rgb(204, 204, 204);
+    font-size: 16px;
+    font-family: corbel;
+}
+
+body {
+    overflow-x:hidden;
+    
+    width: 100%;
+    height: 100vh;
+    
+    background-color: black;
+}
+
+p {
+    font-size: 1.25rem;
+    
+    width: 50%;
+    text-align: left;
+}
+
+.pageTitle {
+    color: rgb(100,119,137);
+    line-height: 10rem;
+    font-size: 9rem;
+    font-family: corbelLight;
+    font-weight: normal;
+}
+
+.subPageTitle {
+    text-align: center;
+    font-size: 4rem;
+    font-family: corbel;
+    font-weight: normal;
+    text-decoration: underline;
+    text-decoration-thickness: .2rem;
+    text-underline-offset: 1rem;
+}
+
+/*Settings for all pages*/
+.page {
+    transition: opacity 0.2s linear;
+
+    z-index: -2;
+
+    overflow: hidden;
+
+    display: none;
+    justify-content: center;
+    align-items: center;
+    
+    width: 100%;
+    height: 100%;
+}
+
+.subPage {
+    transition: opacity 0.2s linear;
+    
+    display: none;
+    justify-content: center;
+    align-items: center;
+    
+    width: 100%;
+    height: 100%;
+}
+
+/*page content settings*/
+.pageContent {
+    transition: transform 0.5s ease-out, opacity 0.5s ease-out;
+    
+    position: relative;
+    
+    width: 90%;
+    height: 90%;
+}
+
+/*Settings for each page*/
+#homePage {
+    background: linear-gradient(to right, rgba(0,0,0,0.5), rgba(0,0,0)),
+    url("images/futuristic background.jpg");
+
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+#aboutPage {
+    background: linear-gradient(to right, rgba(0,0,0), rgba(0,0,0,0.5)),
+    url("images/futuristic background.jpg");
+
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+#contactPage {
+    background: linear-gradient(rgba(0,0,0,0.6), rgba(0,0,0,0.6)),
+    url("images/futuristic background.jpg");
+
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+/*Settings for each subpage*/
+#portfolioSubPage {
+    background: linear-gradient(rgba(0,0,0,0.3), rgba(0,0,0,0.3)),
+    url("images/grid background.jpg");
+
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+/*Home content*/
+#personalLogo {
+    z-index: -1;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    left: 50%;
+
+    height: 110%;
+    filter: brightness(50%);
+}
+
+#nameTitle {
+    font-size: 2rem;
+    font-family: corbelLight;
+    font-style: italic;
+}
+
+#nameSeparator {
+    border: 1px rgb(100, 119, 137) solid;
+    width: 27.5rem;
+}
+
+/*About Content*/
+#aboutTitleSeparator {
+    border: 1px rgb(100, 119, 137) solid;
+    width: 22rem;
+}
+
+/*Contact Content*/
+#contactTitleSeparator {
+    border: 1px rgb(100, 119, 137) solid;
+    width: 28.5rem;
+}
+
+#contactParagraph {
+    font-size: 3rem;
+    text-align: left;
+}
+
+/*Portfolio Content*/
+#portfolioParagraph {
+    text-align: center;
+    width: 100%;
+}
+
+#portfolios {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    margin-top: 6.5%;
+    margin-left: -5vw;
+
+    /*subtracts the width of the scrollbar from the width of the portfolio container*/
+    width: calc(100vw - .8rem);
+    height: 50%;
+
+    background-color: rgba(80,80,80, .2);
+}
+
+
+#portfolios a {
+    transition: all 1s ease-in-out;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    margin-inline: 2%;
+    width: 30%;
+    height: 100%;
+
+    text-align: center;
+    font-size: 2rem;
+    color: transparent;
+    text-decoration: none;
+
+    background-size: cover;
+    background-position: center;
+}
+
+
+#portfolios a:hover {
+    cursor: pointer;
+
+    width: 35%;
+    height: 110%;
+
+    border-radius: 10px;
+    color: rgb(204,204,204);
+    box-shadow: 7px 7px 15px rgb(100,100,100);
+
+    background-size: cover;
+    background-position: center;
+}
+
+
+#portfolio1 {
+    background-image: url("images/motif museum ss.jpg");
+}
+#portfolio1:hover {
+    background-image: url("images/motif museum ss dark.jpg");
+}
+
+
+#portfolio2 {
+    background-image: url("images/mountain background.jpg");
+}
+#portfolio2:hover {
+    background-image: url("images/mountain background dark.jpg");
+}
+
+
+#portfolio3 {
+    background-image: url("images/mountain background.jpg");
+}
+#portfolio3:hover {
+    background-image: url("images/mountain background dark.jpg");
+}
+
+/*nav bar indicator*/
+#navBarIndicator {
+    z-index: 1;
+    position: fixed;
+    top: 2.5%;
+    right: 22.5%;
+
+    width: 10%;
+    height: 5%;
+
+    background-color: rgb(0, 140, 207);
+    transition: transform .5s ease-in-out;
+}
+
+/*Nav Bar*/
+#navBar ul {
+    z-index: 2;
+    position: fixed;
+    top: 2.5%;
+    right: 2.5%;
+
+    display: flex;
+    margin: 0;
+    padding: 0;
+    justify-content: space-around;
+
+    width: 30%;
+    height: 5%;
+    list-style-type: none;
+    background-color: rgba(80,80,80, .85);
+}
+
+#navBar li {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    width: calc(100%/3);
+    height: 100%;
+    color: grey;
+    font-size: 150%;
+    font-family: corbelLight;
+    text-decoration: none;
+}
+
+#navBar li:hover {
+    cursor: pointer;
+}
+
+/*scrollbar settings*/
+::-webkit-scrollbar {
+    width: .8rem;
+}
+
+::-webkit-scrollbar-track {
+    background-color: black;
+}
+
+::-webkit-scrollbar-thumb {
+    background-color: rgb(75,75,75);
+}
+
+::-webkit-scrollbar-thumb:hover {
+    background-color: rgb(100,100,100)
+}
+
+::-webkit-scrollbar-thumb:active {
+    background-color: rgb(125,125,125)
+}
+
+/*Responsive settings*/
+
+/*Laptop*/
+@media (max-width: 1024px) {
+    #personalLogo {
+        left: 40vw;
+        height: 80vh;
+
+
+        filter: brightness(30%);
+    }
+
+
+    html {
+        font-size: 15px;
+    }
+
+
+    p {
+        width: 75%;
+    }
+}
+
+
+/*tablet*/
+@media (max-width: 768px) {
+    #personalLogo {
+        left: 35vw;
+        height: 80vh;
+
+
+        filter: brightness(30%);
+    }
+
+
+    html {
+        font-size: 13px;
+    }
+
+
+    p {
+        width: 75%;
+    }
+
+    #portfolios {
+        margin-top: 10%;
+        height: 45%;
+    }
+
+    #portfolios a {
+        margin-inline: 1%;
+        width: 100%;
+    }
+}
+
+
+/*mobile*/
+@media (max-width: 425px) {
+    #personalLogo {
+        top: 45%;
+        left: 50%;
+        transform: translateX(-50%);
+        height: 60%;
+
+
+        filter: brightness(30%);
+    }
+
+
+    html {
+        font-size: 10px;
+    }
+
+
+    p {
+        width: 100%;
+        text-align: justify;
+    }
+
+    #contactParagraph {
+        font-size: 2rem;
+    }
+
+    #portfolioParagraph {
+        text-align: justify;
+    }
+
+    #navBar ul {
+        width: 60%;
+    }
+
+    #navBar li {
+        font-size: 1rem;
+    }
+
+    #navBarIndicator {
+        right: 42.5%;
+
+        width: 20%;
+    }
+
+    #portfolios {
+        margin-top: 10%;
+        flex-direction: column;
+        height: 65%;
+    }
+    
+    #portfolios a {
+        margin-block: 2%;
+        width: 100%;
+        color: rgb(204,204,204);
+    }
+
+    #portfolios a:hover {
+        width: 100%;
+        height: 100%;
+    
+        border-radius: 0px;
+        box-shadow: 0px 0px 0px rgba(0,0,0,0);
+    }
+
+    #portfolio1 {
+        background-image: url("images/motif museum ss dark.jpg");
+    }
+    #portfolio1:hover {
+        background-image: url("images/motif museum ss dark.jpg");
+    }
+    #portfolio2 {
+        background-image: url("images/mountain background dark.jpg");
+    }
+    #portfolio2:hover {
+        background-image: url("images/mountain background dark.jpg");
+    }
+    #portfolio3 {
+        background-image: url("images/mountain background dark.jpg");
+    }
+    #portfolio3:hover {
+        background-image: url("images/mountain background dark.jpg");
+    }
+}

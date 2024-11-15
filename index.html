@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Holland Portfolio</title>
+    <link rel = "icon" type = "image/x-icon" href = "images/personal logo.png">
+    <link rel="stylesheet" href="style.css">
+    
+    <meta charset="utf-8">
+    <meta name="description" content="">
+    <meta name="keywords" content="">
+    <meta name="author" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+  </head>
+  
+  <body>
+
+    <!--Nav Bar-->
+    <nav id = "navBar">
+        <ul>
+          <li onclick = "pageChange('home', 'translateX(0%)')">Home</li>
+          <li onclick = "pageChange('about', 'translateX(100%)')">About</li>
+          <li onclick = "pageChange('contact', 'translateX(200%)')">Contact</li>
+        </ul>
+    </nav>
+    <div id = "navBarIndicator"></div>
+  
+    <!--Home Page-->
+    <div id = "homePage" class = "page">
+      <div class = "pageContent">
+        
+        <img id = "personalLogo" src = "images/personal logo.png">
+        <h1 class = "pageTitle">Taiyo<br>Holland</h1>
+        <p id = "nameTitle">Student Programmer</p>
+        <br>
+        <hr id = "nameSeparator">
+        <br>
+        <p>
+            Welcome to my website, I'm Taiyo Holland. I'm a dedicated student and budding 
+            coder with a focus on web development. Over the past few years, I've been 
+            building my skills in Python, CSS, and HTML, creating projects that transform 
+            ideas into functional, interactive experiences. Recently, I've been expanding 
+            into JavaScript and C#, which has opened up new opportunities for growth and 
+            creativity. Here, you'll find a selection of my work, each project a step in my 
+            journey as a developer. I invite you to explore and see how I'm shaping my skills 
+            and refining my craft. Scroll down to view some of my previous work.
+        </p>
+        
+      </div>
+    </div> 
+    
+    <!--Portfolio-->
+    <div id = "portfolioSubPage" class = "subPage">
+      <div class = "pageContent">
+
+        <h1 class = "subPageTitle">Portfolio</h1>
+        <br>
+        <p id = "portfolioParagraph">
+            Explore my collection of projects! Each piece in this portfolio showcases 
+            my journey as a student coder, where I've worked with languages like Python,
+            CSS, and HTML to build engaging, functional web experiences. From developing 
+            foundational skills to experimenting with JavaScript and C#, each project reflects
+            both my learning process and my enthusiasm for creating something meaningful through
+            code. This portfolio highlights not only what I've achieved so far but also the
+            path I'm taking to grow as a developer. Dive in, and get a closer look at how I'm
+            crafting my skills, one project at a time.
+        </p>
+
+        <div id = "portfolios">
+            <a id = "portfolio1" target = "_blank" href = "https://motif-museum.netlify.app/">
+                Motif Museum Website<br>
+                <span style = "font-style: italic; font-weight: lighter;">
+                    - A website created for a book -
+                </span>
+            </a>
+            <a id = "portfolio2">
+                Future Portfolio Piece<br>
+                <span style = "font-style: italic; font-weight: lighter;">
+                    - A future project -
+                </span>
+            </a>
+            <a id = "portfolio3">
+                Future Portfolio Piece<br>
+                <span style = "font-style: italic; font-weight: lighter;">
+                    - A future project -
+                </span>
+            </a>
+        </div>
+        
+      </div>
+    </div> 
+
+    <!--About Page-->
+    <div id = "aboutPage" class = "page">
+      <div class = "pageContent">
+        
+        <h1 class = "pageTitle">About</h1>
+        <hr id = "aboutTitleSeparator">
+        <br>
+        <p>
+            I'm Taiyo Holland, a student with a passion for programming and a focus on
+            web development. With experience in Python, CSS, and HTML, and a growing 
+            knowledge of JavaScript and C#, I'm driven to learn and build creative solutions
+            through code. While I have dabbled in graphic design, my main priority is developing 
+            as a coder, tackling projects that challenge me and help expand my skill set. 
+            As I continue to learn, I'm excited to see where coding takes me, and I'm always
+            eager to take on new challenges that push my abilities to the next level.
+        </p>
+        
+      </div>
+    </div>
+    
+    <!--Contact Page-->
+    <div id = "contactPage" class = "page">
+      <div class = "pageContent">
+        
+        <h1 class = "pageTitle">Contact</h1>
+        <hr id = "contactTitleSeparator">
+        <br>
+        <p id = "contactParagraph">
+            <span style = "font-weight: bold; color: rgb(100,119,137);">Phone number:</span> 555-555-5555<br>  
+            <span style = "font-weight: bold; color: rgb(100,119,137);">Email:</span> taiyoholland@gmail.com
+        </p>
+        
+      </div>
+    </div>
+    
+    <!--Links java script file--> 
+    <script src = "script.js"></script>
+    
+  </body>
+</html>
